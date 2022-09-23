@@ -4,6 +4,14 @@ import java.time.LocalDateTime;
 
 import lombok.Data;
 
+/**
+ *  
+ * Purpose:DTO for the bookstore user data
+ * 
+ * @author: Pavan Kumar G V 
+ * @version: 4.15.1.RELEASE
+ * 
+ **/ 
 @Data
 public class BSUserDto {
 	private long userId;

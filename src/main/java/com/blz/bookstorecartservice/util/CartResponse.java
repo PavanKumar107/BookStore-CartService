@@ -1,6 +1,7 @@
 package com.blz.bookstorecartservice.util;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *  
@@ -11,11 +12,16 @@ import lombok.Data;
  **/ 
 @Data
 @AllArgsConstructor
-public class Response {
+@NoArgsConstructor
+public class CartResponse {
     private String message;
     private int errorCode;
     private Object token;
-   
-    public Response() {
-    }
+    
+    
+	public CartResponse(String message, int errorCode) {
+		super();
+		this.message = message;
+		this.errorCode = errorCode;
+	} 
 }
